@@ -1,7 +1,4 @@
-document.getElementById("agent").innerHTML = window.navigator.userAgent.toLowerCase();
-
 document.getElementById("agent").innerHTML = window.navigator.userAgent;
-
 
 /* Detection de la version du navigateur sur le poste client */
 document.getElementById("navigateur").innerHTML = (function (agent) {
