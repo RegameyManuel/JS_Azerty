@@ -1,0 +1,26 @@
+button {
+    height: 60px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.key-row {
+    margin-bottom: 5px;
+}
+
+.key {
+    margin: 2px;
+    width: 60px;
+}
+
+.key.large {
+    width: 120px;
+}
+
+.key.space {
+    width: 360px;
+}
