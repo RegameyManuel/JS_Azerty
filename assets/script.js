@@ -1,10 +1,9 @@
 const buttons = document.querySelectorAll('.key');
-
 const agent_navigateur = window.navigator.userAgent;
+
 
 document.getElementById("agent").innerHTML = agent_navigateur;
 
-/* Detection de la version du navigateur sur le poste client */
 document.getElementById("navigateur").innerHTML = (function (agent) {
     switch (true) {
         case agent.includes("edge"):
@@ -25,8 +24,6 @@ document.getElementById("navigateur").innerHTML = (function (agent) {
             return "other";
     }
 })(agent_navigateur.toLowerCase());
-
-
 
 
 
