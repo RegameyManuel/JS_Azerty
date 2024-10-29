@@ -1,4 +1,8 @@
-document.getElementById("agent").innerHTML = window.navigator.userAgent;
+const buttons = document.querySelectorAll('.key');
+
+const agent_navigateur = window.navigator.userAgent;
+
+document.getElementById("agent").innerHTML = agent_navigateur;
 
 /* Detection de la version du navigateur sur le poste client */
 document.getElementById("navigateur").innerHTML = (function (agent) {
@@ -20,10 +24,10 @@ document.getElementById("navigateur").innerHTML = (function (agent) {
         default:
             return "other";
     }
-})(window.navigator.userAgent.toLowerCase());
+})(agent_navigateur.toLowerCase());
 
 
-const buttons = document.querySelectorAll('.key');
+
 
 
 // Fonction pour détecter la touche appuyée et changer la couleur
